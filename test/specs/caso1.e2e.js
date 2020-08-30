@@ -1,10 +1,10 @@
-/*
+
 const LoginPage = require('../pageobjects/login.page');
 const SecurePage = require('../pageobjects/secure.page');
 const reservationPage = require('../pageobjects/reservationPage');
 const resultsPage = require('../pageobjects/resultsPage');
 
-describe('My Login application', () => {
+describe('PHP Travels project', () => {
     it('Searching flights', () => {
         reservationPage.open();
         browser.setTimeout({ 'pageLoad': 10000 });
@@ -13,8 +13,7 @@ describe('My Login application', () => {
 
         reservationPage.getbtnFlights().click();
         browser.pause(5000);
-        //reservationPage.flightsbuttonWait().click();
-
+     
      reservationPage.getmaskFlyFrom().click();
      reservationPage.getinputFlyFrom().setValue('SJO');
      browser.pause(1000);
@@ -33,13 +32,13 @@ describe('My Login application', () => {
      browser.pause(1000);
 
 
-//Por default ya tiene un Adulto, agrego solo uno para que se vean dos
+//  Por default ya tiene un Adulto, agrego solo uno para que se vean dos
     reservationPage.AddAdults(1);
-  //  browser.pause(3000);
+//  browser.pause(3000);
     reservationPage.AddChilds(3);
- //   browser.pause(3000);
+//  browser.pause(3000);
     reservationPage.AddInfant(1);
- //   browser.pause(5000);
+//  browser.pause(5000);
    
     reservationPage.getbtnSearchFly().click();
     browser.setTimeout({'pageLoad': 5000});
@@ -68,4 +67,3 @@ describe('My Login application', () => {
 
 });
 
-*/

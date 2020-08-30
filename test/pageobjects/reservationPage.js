@@ -40,10 +40,10 @@ class reservationPage extends Page {
     getbtnSearchFly () {return this.btnSearchFly} 
     
     open () {
+        browser.maximizeWindow();
         return super.open(' ');
     }
  
-//}
 /*
     flightsbuttonWait() {
     const btnFlights = $('//*[@id="search"]/div/div/div/div/div/nav/ul/li[2]/a')
@@ -54,24 +54,18 @@ class reservationPage extends Page {
         for (var i = 0; i < adults; i++) {
             this.btnAdults.click(); }
             browser.pause(3000);
-           // reservationPage.getbtnAdults().click();}
-           // browser.pause(3000);
     }
 
     AddChilds(children){
         for (var j = 0; j < children; j++ ) {
             this.btnChilds.click();}
             browser.pause(3000);
-           // reservationPage.getbtnChilds().click();}
-           // browser.pause(3000)
     }
 
     AddInfant(infant){
         for (var k = 0; k < infant; k++ ) {
             this.btnInfants.click();}
             browser.pause(3000);
-           // reservationPage.getbtnChilds().click();}
-           // browser.pause(3000)
     }
 
 }
